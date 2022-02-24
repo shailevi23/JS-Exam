@@ -1,0 +1,67 @@
+body 
+{
+	font-family: arial;
+	color: darkgray;
+}
+
+h1
+{
+	text-align: center;
+}
+
+button
+{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.transparent
+{
+	opacity: 0
+}
+
+#sample-container
+{
+	margin-top: 3rem;
+	text-align: left;
+	color: blue;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.PostItem
+{
+	border: 2px solid black;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.PostItem span
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#from 
+{
+	font-size: 18px;
+	color: green;
+}
+
+.MessageItem
+{
+	border: 2px solid black;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.MessageItem span
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}

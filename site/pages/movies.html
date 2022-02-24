@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Movie Reviews Page</title>
+	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+	<img src="../images/logo.jpeg" width="150" height="150"/>
+
+	<script src="../js/ReactButton.js"></script>
+	<script src="../js/MovieReviews.js"></script>
+	<link rel="stylesheet" type='text/css' href="../css/sample.css">
+</head>
+
+<body>
+
+	<h1>Movie Reviews Page<h1>
+	<div id='sample-container'></id>
+
+</body>
+
+<script>
+
+const domContainer = document.querySelector('#sample-container');
+ReactDOM.render( React.createElement("div", null, [React.createElement(MovieReviews)]),
+												 domContainer);
+</script>
+
+
+</html>

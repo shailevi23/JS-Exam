@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "2c6254e9-5949-4e03-bd73-f32037be5bba",
+		"name": "JS exam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Movies",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Success status 200', function (){",
+							"    pm.response.to.have.status(200);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_SERVER}}get_movies",
+					"host": [
+						"{{API_SERVER}}get_movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Reviews",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Success status 200', function (){",
+							"    pm.response.to.have.status(200);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_SERVER}}get_reviews",
+					"host": [
+						"{{API_SERVER}}get_reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Movie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Success status 200', function (){",
+							"    pm.response.to.have.status(200);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"search\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_SERVER}}search_movie",
+					"host": [
+						"{{API_SERVER}}search_movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send New Review",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Success status 200', function (){",
+							"    pm.response.to.have.status(200);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sol\",\r\n    \"email\" : \"sol@gmail.com\",\r\n    \"movie\" : \"Avatar\",\r\n    \"review\": \"wow\",\r\n    \"stars\" : \"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_SERVER}}send_review",
+					"host": [
+						"{{API_SERVER}}send_review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publish New Movie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Success status 200', function (){",
+							"    pm.response.to.have.status(200);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"email\" : \"shai@gmail.com\",\r\n    \"movie_name\" : \"Jurassic Park\",\r\n    \"image_url\": \"https://www.seekpng.com/png/detail/81-810252_yellow-logo-jurassic-park-logo-png.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_SERVER}}publish_movie",
+					"host": [
+						"{{API_SERVER}}publish_movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post Shai",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Success status 200', function (){",
+							"    pm.response.to.have.status(200);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movie\" : \"Jurassic Park\",\r\n    \"secret_data\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_SERVER}}delete_movie",
+					"host": [
+						"{{API_SERVER}}delete_movie"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_SERVER",
+			"value": "http://localhost:5050/api/",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+[
+  { "email": "shai@gmail.com", "user_id": 1, "display_name": "shai@gmail.com" },
+  { "email": "scarface@gmail.com", "user_id": 2, "display_name": "Scarface" },
+  { "email": "neo@gmail.com", "user_id": 3, "display_name": "Neo" },
+  { "email": "shailevi@gmail.com", "user_id": 4, "display_name": "shai" },
+  { "email": "zyra@lol.com", "user_id": 5, "display_name": "zyra@lol.com" },
+  { "email": "zeri@gmail.com", "user_id": 6, "display_name": "Zeri" },
+  { "email": "rakan@gmail.com", "user_id": 7, "display_name": "Rakan" },
+  { "email": "yi@gmail.com", "user_id": 8, "display_name": "Yi" },
+  { "email": "aph@gmail.com", "user_id": 9, "display_name": "aphelios" },
+  { "email": "sol@gmail.com", "user_id": 10, "display_name": "Sol" }
+]
